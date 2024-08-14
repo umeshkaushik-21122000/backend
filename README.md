@@ -11,12 +11,12 @@ Installation
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/umeshkaushik-21122000/backend.git
 ```
 #### Navigate to the project directory:
 
 ```bash
-cd <project-directory>
+cd backend
 ```
 #### Install the dependencies:
 
