@@ -1,10 +1,13 @@
 // app.js
+import dotenv from 'dotenv';
+dotenv.config();
 import express from 'express';
 import bodyParser from 'body-parser';
 import { nanoid } from 'nanoid';
 import cors from 'cors';
+
 const app = express();
-const port = 3003;
+const port = process.env.PORT || 3000;
 
 const allProducts= {          
     "products" : [
@@ -352,5 +355,3 @@ const allProducts= {
   app.listen(port, () => {
     console.log(`Server running on http://localhost:${port}`);
   });
-
-export {app};
